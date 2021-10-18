@@ -15,6 +15,7 @@ function isPalindroma(parola){
     let parolaInvertita = spezzettaLaStringa.join("");
     console.log("la parola invertita è ", parolaInvertita);
 
+    //comparo la parola che si vuole comparare con se stessa ma invertita
     if(parola === parolaInvertita){
         alert("questa parola è palindroma");
         console.log("questa parola è palindroma");
@@ -24,4 +25,5 @@ function isPalindroma(parola){
     }
 }
 
+//invoco la funzione
 isPalindroma(parolaInserita);

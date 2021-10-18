@@ -1,20 +1,30 @@
 //chiedi all'untente di scegliere tra pari dispari
-const pariDispari = prompt("scegli pari o dispari?");
+let pariDispari; 
+console.log(pariDispari);
 
-if (pariDispari.toLocaleLowerCase() === "pari"){
-    alert("hai scelto pari");
-    console.log("hai scelto pari");
-} else if(pariDispari.toLocaleLowerCase() === "dispari"){
-   alert("hai scelto dispari");
-   console.log("hai scelto dispari");
-} else{
-    alert("puoi scegliere solo tra pari e dispari");
-    console.log("puoi scegliere solo tra pari e dispari");
+while(pariDispari === undefined){
+
+    pariDispari = prompt("scegli pari o dispari?")
+
+    if(pariDispari.toLowerCase() === "pari"){
+        alert("hai scelto pari");
+        console.log("hai scelto pari");
+
+    }else if(pariDispari.toLowerCase() === "dispari"){
+        alert("hai scelto dispari");
+        console.log("hai scelto dispari");
+    } else{
+        alert("devi scegliere o pari o dispari");
+        pariDispari = undefined;
+    }
 }
+console.log(pariDispari);
+
 
 //chiedi all'utente di inserire un numero tra 1 e 5
-const numeroDellUtente = parseInt(prompt("scegli un numero tra 1 e 5"));
-
+let numeroDellUtente = parseInt(prompt("scegli un numero tra 1 e 5"));
+console.log(numeroDellUtente);
+//chiedi allutente di inserire un numero finché non è reimpit
 
 
 

@@ -73,8 +73,8 @@ function getPariDispari(num1, num2){
             alert("computer vince")
             console.log("computer vince")
         }
-    }
-   /*  return risultato;  */  
+    } 
 }
 
+//invoco la funzione
 getPariDispari(numeroDellUtente, numeroDelComputer);
